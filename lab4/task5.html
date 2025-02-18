@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alizah Basit 22k5155 WE Lab 04 Task 05</title>
+</head>
+<body>
+    <h2>Palindrome Checker</h2>
+    <label for="inputstr"><b>Enter string to check for Palindrome: </b></label>
+    <input id="inputstr" type="text">
+    <button onclick="isPal()">Check</button>
+    <p id="output"></p>
+    <script>
+        function isPal(){
+            let inputString=document.getElementById("inputstr").value;
+            let reversedString = inputString.split("").reverse().join("");
+            if (inputString==reversedString){
+                document.getElementById("output").innerHTML=`
+                <b style ="color: green">This is a palindrome!</b>
+                `
+            }
+            else{
+                document.getElementById("output").innerHTML=`
+                <b style ="color: red">This is NOT a palindrome!</b>
+                `
+            }
+        }
+    </script>
+</body>
+</html>

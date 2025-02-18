@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    *{
+    border-radius: 5px;
+    /* border-radius: 3% 3% 3% 3% 3% 3% ; */
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    /* border-radius: 3%; */
+    background-color: rgb(255, 243, 220);
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 75% 25%;
+    height: 100vh;
+    margin: 0%;
+}
+
+header{
+    /* border-radius: 3%; */
+    background-color: rgb(253, 211, 135);
+    grid-column:span 2;
+    padding: auto;
+    text-align:left;
+    /* margin: 2%; */
+    grid-row:span 1;
+}
+
+nav{
+    /* border-radius: 10px; */
+    background-color: rgb(253, 211, 135);
+    padding: auto;
+    text-align: left;
+    margin: 2%;
+    grid-column:span 2;
+    grid-row: 2;
+}
+main{
+    background-color: rgb(253, 211, 135);
+    padding: 10%;
+    text-align: left;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    grid-column:1;
+    grid-row: 3;
+}
+
+article{
+    background-color: rgb(255, 175, 96);
+    padding: 5%;
+    text-align: left;
+    margin: 2%;
+    /* flex-direction: row; */
+}
+
+aside{
+    background-color: rgb(253, 211, 135);
+    padding: auto;
+    text-align: left;
+    margin: 2%;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+footer{
+    background-color: rgb(253, 211, 135);
+    padding: auto;
+    text-align: left;
+    margin: 2%;
+    grid-column:span 2;
+    grid-row: 4;
+}
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22K-5155 Alizah Basit : Lab 2 Task 4</title>
+</head>
+<body>
+    <header>
+        <h2>header</h2>
+        <nav><h4>nav</h4></nav>
+    </header>
+
+    <nav>
+        <h2>nav</h2>
+    </nav>
+
+    <main>
+        <h2>main</h2>
+        <article>
+            <h4>article1</h4>
+            <header style="background-color:rgb(255, 175, 96);">header</header>
+            <p>content</p>
+            <footer style="background-color:rgb(255, 175, 96);">footer</footer>
+        </article>
+        <article>
+            <h4>article2</h4>
+            <header style="background-color:rgb(255, 175, 96);">header</header>
+            <p>content</p>
+            <footer style="background-color:rgb(255, 175, 96);">footer</footer>
+        </article>
+        <article>
+            <h4>article3</h4>
+            <header style="background-color:rgb(255, 175, 96);">header</header>
+            <p>content</p>
+            <footer style="background-color:rgb(255, 175, 96);">footer</footer>
+        </article>
+        <nav style="background-color: rgb(255, 175, 96);"><h4>nav</h4></nav>
+    </main>
+
+    <aside>
+        <h2>aside</h2>
+        <nav>nav</nav>
+    </aside>
+
+    <footer>
+        <h2>footer</h2>
+    </footer>
+</body>
+</html>

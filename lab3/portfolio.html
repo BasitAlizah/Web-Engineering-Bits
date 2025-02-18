@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alizah Basit Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet"> -->
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+    .headingfont{
+        font-family: 'Dynapuff';
+        font-size: xxx-large;
+        font-weight: bolder;
+        color: #ff5a28;
+
+    }
+    .subheadingfont{
+        font-family: 'Dynapuff';
+        font-size: xxx-large; 
+        font-weight: bold;
+        color: #ff6c43;
+    }
+    .nameheadingfont{
+        font-family: 'Dynapuff';
+        font-size: 72px;
+        font-weight: bold;
+        color: #ff6c43;
+    }
+    .animatedHeadingFont{
+        font-family: 'Dynapuff';
+        font-size: xxx-large;
+        font-weight: bold;
+        color: #774414;
+        /* color: #fae874; */
+        /* color: #fff5ee; */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 
+        typing 2s steps(18),
+        cursor .4s step-end infinite alternate
+        ;
+    }
+
+    .dynapuff{
+        font-family:'Dynapuff' ;
+    }
+
+    @keyframes cursor{
+        50% {
+            border-color: transparent;
+        }
+    }
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+
+    .container{
+        display: inline;
+        }
+
+</style>
+
+<body style="background-color: #FFE5A4;">
+
+    <!-- <nav class="flex flex-row justify-end gap-6 p-3" style="background-color: #ff5a28;">
+        <img src="flexpfp.png" alt="Logo" class="h-10 w-10 rounded-full">
+        <div class="flex gap-6"></div>
+            <a class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" href="#">About</a>
+            <a class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" href="#">Projects</a>
+            <a class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" href="#">Education</a>
+            <a class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" href="#">Contacts</a> -->
+        <!-- </div> -->
+        <!-- <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" >About</button>
+        <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" >Projects</button>
+        <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" >Education</button>
+        <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2" >Contacts</button> -->
+    <!-- </nav> -->
+    <nav class="flex flex-row gap-6 p-3 bg-[#ff5a28] items-center justify-between">
+        <img src="flexpfp.png" alt="Logo" class="h-10 w-10 rounded-full">
+        <div class="flex gap-6">
+            <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2">About</button>
+            <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2">Projects</button>
+            <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2">Education</button>
+            <button class="dynapuff text-orange-100 hover:bg-orange-300 hover:text-orange-600 hover:rounded-2xl p-2">Contact</button>
+        </div>
+    </nav>
+
+    <!-- About -->
+    <div class=" bg-orange-300 p-16 grid grid-cols-2 flex-row ">
+        <div>
+            <!-- <br>
+            <br> -->
+            <h3 class="headingfont">Hello!</h3>
+            <h3 class="nameheadingfont">I'm Alizah Basit</h3>
+            <h3 class="animatedHeadingFont animate animate-text-fade">Software Engineer</h3>
+            <p class="dynapuff text-orange-900 font-size-[12px]">Here to help you bring your digital dreams to life.</p>
+        </div>
+
+        <div class="flex-row">
+            <!-- style="background-color: #ff5a28;" -->
+            <!-- <div style="background-color: #ff5a28;" class="px-4 py-16 rounded-2xl"></div> -->
+
+            <div class="flex flex-row justify-end">
+                <img style="background-color: #ff5a28;" class="rounded-3xl p-2 w-md-auto w-[250px] h-[300px]" src="flexpfp.png" alt="pfp">
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+        <!-- projects -->
+    <div class="p-16 bg-orange-200">
+        <h2 class="subheadingfont text-center mb-8">Projects</h2>
+        <p class="dynapuff text-orange-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Aenean vestibulum, risus nec ultrices tincidunt.</p>
+    </div>
+        
+        <!-- education -->
+    <div class="p-16 bg-orange-300">
+        <h2 class="subheadingfont text-center mb-8">Education</h2>
+        <p class="dynapuff text-orange-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, ligula vel tempus pretium.</p>
+    </div>
+
+    <!-- contacts -->
+    <div class="p-16 bg-orange-200">
+        <h2 class="subheadingfont text-center mb-8">Contacts</h2>
+        <p class="dynapuff text-orange-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Aenean vestibulum, risus nec ultrices tincidunt.</p>
+    </div>
+
+    </div>
+</body>
+</html>

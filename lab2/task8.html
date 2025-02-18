@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    *{
+    /* border-radius: 5px; */
+    /* border-radius: 3% 3% 3% 3% 3% 3% ; */
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(83, 43, 2);
+}
+
+body{
+    /* border-radius: 3%; */
+    background-color: rgb(255, 243, 220);
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 75% 25%;
+    height: 100vh;
+    margin: 0%;
+}
+
+header{
+    /* border-radius: 3%; */
+    background-color: rgb(253, 211, 135);
+    grid-column:span 2;
+    padding: auto;
+    text-align:left;
+    /* margin: 2%; */
+    grid-row:span 1;
+}
+
+
+main{
+    background-color: rgb(253, 211, 135);
+    padding: 10%;
+    text-align: left;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    grid-column:1;
+    grid-row: 3;
+}
+
+
+
+aside{
+    background-color: rgb(253, 211, 135);
+    padding: 10%;
+    text-align: left;
+    margin: 2%;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+footer{
+    background-color: rgb(253, 211, 135);
+    padding: auto;
+    text-align: left;
+    margin: 2%;
+    grid-column:span 2;
+    grid-row: 4;
+}
+
+.flex-container{
+    flex-direction: column;
+    flex: space-around;
+    margin: 0%;
+    padding: 0%;
+    /* align-content: stretch; */
+    /* flex-wrap: wrap; */
+}
+
+button{
+    /* outline: none; */
+    /* overflow: auto; */
+    /* outline-style: none; */
+    border-width: 0px;
+    width: 10%;
+    background-color: rgb(253, 211, 135);
+    cursor: pointer;
+}
+
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22K-5155 Alizah Basit : Lab 2 Task 8</title>
+</head>
+<body>
+    <header>
+        <!-- <h2>header</h2> -->
+        <div class="flex-container">
+            <div style="margin: 0%; padding: 0%;">
+                <button><h3>Home</h3></button>
+                <button><h3>Our Team</h3></button>
+                <button><h3>Projects</h3></button>
+                <button><h3>Contact</h3></button>
+                <input type="text" placeholder="Search Query" style="width: 36%;">
+                <button style="background-color: rgb(255, 128, 0); color: rgb(255, 249, 244); width: 8%;">Go!</button>
+            </div>
+            <!-- <input type="text" placeholder="Search Query">
+            <button style="background-color: rgb(255, 128, 0); color: rgb(255, 249, 244);">Go!</button> -->
+            <!-- <div class="flex-container" style="align-content: left;">
+                <input type="text" placeholder="Search Query">
+                <button style="background-color: rgb(255, 128, 0); color: rgb(255, 249, 244); width: 8%;">Go!</button>
+            </div> -->
+        </div>
+        
+        </header>
+
+    <main>
+        <h1 style="text-align: center;">Article Heading</h1>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ad non interdum quisque finibus himenaeos nulla mus! Ultrices aliquet id ut; sagittis ligula venenatis placerat. Non sed pretium proin auctor pretium etiam integer. Tincidunt porttitor natoque netus turpis nunc senectus nisi. Penatibus sodales congue sed fusce faucibus arcu per. Nullam vestibulum maximus tortor pretium nulla nisl rhoncus. Potenti tempor nullam ad natoque vitae metus semper.</p>
+        <h3>Subsection</h3>
+        <p>Sed tristique integer nostra scelerisque tristique vulputate massa adipiscing nisl. Diam convallis ullamcorper proin mollis maximus nam ultrices proin. Fusce interdum aliquet primis rhoncus ultricies condimentum. Taciti litora euismod fusce platea placerat quam inceptos. Interdum fermentum pellentesque litora eget sit ullamcorper. Per ligula himenaeos habitant, senectus metus interdum per. Erat leo ante euismod leo nullam faucibus. Et litora velit convallis potenti nullam augue. Est consectetur quam vel dis ut varius.</p>
+        <h3>Another Subsection</h3>
+        <p>Aptent dignissim montes et nisi vulputate. Nostra fringilla massa luctus vehicula sodales varius. Ipsum taciti per convallis, magnis senectus imperdiet pharetra pharetra. Euismod iaculis vulputate integer scelerisque luctus etiam fames vestibulum. Himenaeos lectus iaculis magnis lorem mi facilisi amet. Pulvinar morbi commodo dolor per, mattis efficitur ridiculus taciti. Risus fermentum risus tristique tempor ultricies nulla accumsan.</p>
+        <p>Hac velit proin cubilia venenatis litora elit torquent phasellus? Neque libero curabitur venenatis eget volutpat tincidunt interdum. Fames vitae bibendum nostra ut; sed blandit vel aenean. Lectus curabitur molestie parturient tincidunt nisl finibus etiam. Dapibus per hac varius diam sem. In risus tristique nulla consequat tristique magna. Nibh porta sollicitudin congue posuere turpis auctor.</p>
+    </main>
+
+    <aside>
+        <h1>Related</h1>
+        <ul>
+            <li><a href="www.google.com">Lorem ipsum odor amet</a></li>
+            <br>
+            <li><a href="www.google.com">Lorem ipsum odor</a></li>
+            <br>
+            <li><a href="www.google.com">Lorem ipsum odor amet</a></li>
+            <br>
+            <li><a href="www.google.com">Lorem </a></li>
+            <br>
+            <li><a href="www.google.com">Lorem ipsum odor amet</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>©Copyright 2050 by nobody. All rights reversed<p>
+    </footer>
+</body>
+</html>

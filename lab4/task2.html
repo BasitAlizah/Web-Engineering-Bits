@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alizah Basit 22k5155 WE Lab 04 Task 02</title>
+</head>
+<body>
+    <h2>Reverse and arrange Assending</h2>
+    <button onclick="reverseString()">Convert</button>
+    <h6 id="outputString"></h6>
+    <script>
+        function reverseString(){
+            let inputString = prompt("Enter String to reverse or arrange in assending order:");
+            if(!inputString){
+                document.getElementById("outputString").innerHTML= "<i>Please enter a valid string</i>";
+            return;}
+
+            let reversedString = inputString.split("").reverse().join("");
+            let assendingString = inputString.split("").sort().join("");
+    
+            document.getElementById("outputString").innerHTML=`
+            <p>
+                <b>String you entered:</b> ${inputString} </br>
+                <b>String in Reverse:</b> ${reversedString} </br>
+                <b>String in Assending Order:</b> ${assendingString} </br>
+                
+            </p>
+            `
+        }
+    
+    </script>
+</body>
+</html>

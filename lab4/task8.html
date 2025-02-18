@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alizah Basit 22k5155 WE Lab 04 Task 08</title>
+</head>
+<style>
+    .slider{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slider img{
+        width: 100%;
+        display: none;
+        border-radius: 100px;
+    }
+
+    img.displaySlide{
+        display: block;
+    }
+
+</style>
+<body style="background-color: rgb(202, 247, 215);">
+    <h1 style="text-align: center;color: rgb(18, 85, 37);" >Cute Dogs:</h1>
+    <div class="slider">
+    <div>
+        <img class="slide" src="pomeranian.jpeg" alt="pomeranian">
+        <img class="slide" src="husky.jpg" alt="husky">
+        <img class="slide" src="pomsky.jpg" alt="pomsky">
+    </div>
+    </div>
+
+    <script>
+        let index=0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlides(){
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[index].style.display = "block" ;
+            index = (index+1) % slides.length;
+        }
+
+        showSlides();
+        setInterval(showSlides, 3000);
+
+    </script>
+</body>
+</html>

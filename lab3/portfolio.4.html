@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alizah Basit Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Zain', sans-serif;
+        }
+
+        :root {
+            --black: #000000;
+            --dark-grey: #353232;
+            --grey: #5e4e4e;
+            --light-grey: #bfaaaa ;
+            --white: #ffffff;
+            --red: #ff0000;
+            --blue: #2e70eb;
+            /* blue for hover and shadows */
+        }
+
+        .background-container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: url('pfp short.jpg') no-repeat center right;
+            background-size: cover;
+        }
+
+        .background-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, var(--black), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+            z-index: 1;
+        }
+
+        .headingfont { 
+            font-size: 3rem; 
+            font-weight: 800; 
+            /* color: var(--red); */
+            color: var(--light-grey);
+            position: relative;
+            z-index: 2;
+        }
+
+        .subheadingfont { 
+            font-size: 3rem; 
+            font-weight: 700; 
+            color: var(--white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .nameheadingfont { 
+            font-size: 6rem; 
+            font-weight: 900; 
+            color: var(--white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .animatedHeadingFont { 
+            font-size: 4rem; 
+            font-weight: 700; 
+            /* color: var(--light-grey); */
+            color: var(--red);
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: 
+                typing 2s steps(18),
+                cursor .4s step-end infinite alternate;
+        }
+
+        @keyframes cursor {
+            50% { border-color: transparent; }
+        }
+        @keyframes typing {
+            from { width: 0; }
+        }
+
+        .nav-button {
+            color: var(--white);
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: large;
+        }
+
+        .nav-button:hover {
+            background-color: var(--blue);
+            color: var(--black);
+        }
+
+        .section {
+            padding: 5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section.dark {
+            background-color: var(--dark-grey);
+            color: var(--white);
+        }
+
+        .section.light {
+            background-color: var(--grey);
+            color: var(--black);
+        }
+
+    
+    </style>
+</head>
+
+<body class="bg-black">
+<!-- <div class="background-container"></div> -->
+    <!-- Navbar -->
+    <nav class="flex flex-row gap-6 p-5 bg-black/70 items-center justify-between z-50 fixed w-full">
+        <img src="pfpshort.jpg" alt="Logo" class="h-10 w-10 rounded-full transform scale-x-[-1]">
+        <div class="flex gap-6">
+            <!-- <a  href="#"></a> -->
+            <a  href="#about" class="nav-button">About</a>
+            <a  href="#projects" class="nav-button">Projects</a>
+            <!-- <a  href="#" class="nav-button">Education</a> -->
+            <a  href="#contacts" class="nav-button">Contacts</a>
+        </div>
+    </nav>
+
+
+    <section id="about" class="relative p-16 min-h-screen flex ">
+        <div class="absolute inset-0 bg-[url('pfpshort.jpg')] bg-cover bg-center transform scale-x-[-1]"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+    
+        <!--About Content-->
+        <div class="relative z-10 text-left max-w-2xl p-8">
+            <h3 class="headingfont">Hello!</h3>
+            <h3 class="nameheadingfont">I'm Alizah Basit</h3>
+            <h3 class="animatedHeadingFont animate animate-text-fade">Software Engineer</h3>
+            <p class="text-white text-2xl">Here to help you bring your digital dreams to life.</p>
+        </div>
+    </section> 
+
+    <!-- Projects -->
+    <section id="projects" class="section light">
+        <h2 class="subheadingfont text-center mb-8">Projects</h2>
+        <div class="flex flex-wrap gap-2">
+            <div class="mt-5 gap-8  mx-auto flex flex-wrap ">
+                <div class="overflow-hidden rounded-r-2xl">
+                    <div class="bg-[--light-grey] max-w-lg p-3 rounded-l-full ">
+                        <div class="flex flex-row gap-2">
+                            <img class="rounded-full p-1 pt-1 " src="webpic.jpeg" alt="stockimglol">
+                            <div class="text-[18px] text-[--black]">
+                                <p>Lorem ipsum dolor sit amet. Ex dolorem commodi ut corporis soluta rem omnis dolores qui quas ullam sed corporis quisquam. Est amet aspernatur in atque velit in impedit iusto a ipsum accusantium sed adipisci sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 gap-8  mx-auto flex flex-wrap ">
+                <div class="overflow-hidden rounded-r-2xl">
+                    <div class="bg-[--light-grey] max-w-lg p-3 rounded-l-full ">
+                        <div class="flex flex-row gap-2">
+                            <img class="rounded-full p-1 pt-1 " src="webpic.jpeg" alt="stockimglol">
+                            <div class="text-[18px] text-[--black]">
+                                <p>Lorem ipsum dolor sit amet. Ex dolorem commodi ut corporis soluta rem omnis dolores qui quas ullam sed corporis quisquam. Est amet aspernatur in atque velit in impedit iusto a ipsum accusantium sed adipisci sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 gap-8  mx-auto flex flex-wrap ">
+                <div class="overflow-hidden rounded-r-2xl">
+                    <div class="bg-[--light-grey] max-w-lg p-3 rounded-l-full ">
+                        <div class="flex flex-row gap-2">
+                            <img class="rounded-full p-1 pt-1 " src="webpic.jpeg" alt="stockimglol">
+                            <div class="text-[18px] text-[--black]">
+                                <p>Lorem ipsum dolor sit amet. Ex dolorem commodi ut corporis soluta rem omnis dolores qui quas ullam sed corporis quisquam. Est amet aspernatur in atque velit in impedit iusto a ipsum accusantium sed adipisci sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 gap-8  mx-auto flex flex-wrap ">
+                <div class="overflow-hidden rounded-r-2xl">
+                    <div class="bg-[--light-grey] max-w-lg p-3 rounded-l-full ">
+                        <div class="flex flex-row gap-2">
+                            <img class="rounded-full p-1 pt-1 " src="webpic.jpeg" alt="stockimglol">
+                            <div class="text-[18px] text-[--black]">
+                                <p>Lorem ipsum dolor sit amet. Ex dolorem commodi ut corporis soluta rem omnis dolores qui quas ullam sed corporis quisquam. Est amet aspernatur in atque velit in impedit iusto a ipsum accusantium sed adipisci sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="mt-5 gap-8  mx-auto flex flex-wrap ">
+                <div class="overflow-hidden rounded-r-2xl">
+                    <div class="bg-[--light-grey] max-w-lg p-3 rounded-l-full ">
+                        <div class="flex flex-row gap-2">
+                            <img class="rounded-full p-1 pt-1 " src="webpic.jpeg" alt="stockimglol">
+                            <div class="text-[18px] text-[--black]">
+                                <p>Lorem ipsum dolor sit amet. Ex dolorem commodi ut corporis soluta rem omnis dolores qui quas ullam sed corporis quisquam. Est amet aspernatur in atque velit in impedit iusto a ipsum accusantium sed adipisci sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="mt-5 gap-8  mx-auto flex flex-wrap ">
+                <div class="overflow-hidden rounded-r-2xl">
+                    <div class="bg-[--light-grey] max-w-lg p-3 rounded-l-full ">
+                        <div class="flex flex-row gap-2">
+                            <img class="rounded-full p-1 pt-1 " src="webpic.jpeg" alt="stockimglol">
+                            <div class="text-[18px] text-[--black]">
+                                <p>Lorem ipsum dolor sit amet. Ex dolorem commodi ut corporis soluta rem omnis dolores qui quas ullam sed corporis quisquam. Est amet aspernatur in atque velit in impedit iusto a ipsum accusantium sed adipisci sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>  
+    
+                
+        
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="section dark">
+        <h2 class="subheadingfont text-center mb-8">Contacts</h2>
+        
+        <div class="grid grid-cols-3 text-center">
+            <div class="col-span-1 ">
+                <h3>Email:</h3>
+                <p class="text-[--white] font-size-[12px]">
+                    <a href="mail to: k225155@nu.edu.pk">k225155@nu.edu.pk</a>
+                </p>
+            </div>
+            <div class="col-span-1">
+                <h3>Phone:</h3>
+                <p class="text-[--white] font-size-[12px]">
+                    0515-5515551
+                </p>
+            </div>
+            <div class="col-span-1">
+                <h3>Address:</h3>
+                <p class="text-[--white] font-size-[12px]">
+                    Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elitelitelitelit.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

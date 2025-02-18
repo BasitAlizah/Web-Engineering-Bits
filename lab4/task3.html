@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alizah Basit 22k5155 WE Lab 04 Task 03</title>
+</head>
+<body>
+    <h2>Multiplication Table</h2>
+    <button onclick="generateTable()">Generate</button>
+    <h6 id="outputTable"></h6>
+    <script>
+        function generateTable(){
+            let inputNumber = Number(prompt("Enter number to generate table"));
+            if(!inputNumber){
+                document.getElementById("outputTable").innerHTML= "<i>Please enter a valid number</i>";
+            return;}
+
+            let inputLimit = Number(prompt("Enter number to generate table till"));
+            if(!inputLimit){
+                document.getElementById("outputTable").innerHTML= "<i>Please enter a valid number</i>";
+            return;}
+
+            function multiply(num,limit){
+                return num*limit;
+            }
+
+            document.getElementById("outputTable").innerHTML=`
+                <h3>Generating table of: ${inputNumber} </h3>
+            `
+
+            for (let i=1; i<=inputLimit ;i++){
+                document.getElementById("outputTable").innerHTML+=
+                `<b> ${inputNumber} X ${i} = ${multiply(inputNumber,i)}</b></br>`
+            }
+        }
+    
+    </script>
+</body>
+</html>
